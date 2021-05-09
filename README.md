@@ -78,8 +78,6 @@ the hand number is not zero.
 Packages
 --------
 
- * **allegro_hand** A python client that enables direct control of the hand in
-                    python code.
  * **allegro_hand_driver** Driver for talking with the allegro hand.
  * **allegro_hand_controllers** Different nodes that actually control the hand.
  The AllegroNode class handles all the generic driver comms, each class then
