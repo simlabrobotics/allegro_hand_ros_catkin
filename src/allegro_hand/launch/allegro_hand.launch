@@ -123,7 +123,7 @@
   <!-- Joint States (angles) to Joint Transforms -->
   <node name="jointState2tf_$(arg NUM)"
         pkg="robot_state_publisher"
-        type="state_publisher">
+        type="robot_state_publisher">
     <remap from="tf" to="allegroHand_$(arg NUM)/tf"/>
     <remap from="joint_states" to="allegroHand_$(arg NUM)/joint_states"/>
   </node>
@@ -131,7 +131,7 @@
   <!-- Keyboard handler (if arg KEYBOARD is true) -->
   <node name="keyboard_$(arg NUM)"
         pkg="allegro_hand_keyboard"
-        type="allegro_hand_keyboard_node"
+        type="allegro_hand_keyboard"
         output="screen"
         if="$(arg KEYBOARD)">
     <remap from="allegroHand/lib_cmd" to="allegroHand_$(arg NUM)/lib_cmd"/>
